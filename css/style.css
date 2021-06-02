@@ -232,9 +232,9 @@ body{
         width: 5em;
     }
     .social a{
-        width: 35px;
-        height: 35px;
-        margin: 7px;
+        width: 13px;
+        height: 13px;
+        margin: 5px;
     }
 }
 @media (max-width: 120px){
@@ -248,9 +248,9 @@ body{
         width: 8em;
     }
     .social a{
-        width: 30px;
-        height: 30px;
-        margin: 7px;
+        width: 10px;
+        height: 10px;
+        margin: 3px;
     }
 }
 /* Contact */
