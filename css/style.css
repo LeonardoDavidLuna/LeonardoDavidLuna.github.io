@@ -231,6 +231,11 @@ body{
     .main img{
         width: 5em;
     }
+    .social a{
+        width: 35px;
+        height: 35px;
+        margin: 7px;
+    }
 }
 @media (max-width: 120px){
     body{
@@ -241,6 +246,11 @@ body{
     }
     .main img{
         width: 8em;
+    }
+    .social a{
+        width: 30px;
+        height: 30px;
+        margin: 7px;
     }
 }
 /* Contact */
