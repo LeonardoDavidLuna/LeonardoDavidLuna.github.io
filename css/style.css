@@ -84,6 +84,7 @@ body{
     font-size: 1.2em;
     color: var(--sec-font-color);
     margin-bottom: 1.2em;
+    margin-left: 25px;
 }
 .box .btn{
     font-size: 1.2em;
@@ -95,87 +96,130 @@ body{
     width: 7em;
     height: 2.2em;
     transition: all .4s;
+    margin-left: 25px;
 }
 .box .btn:hover{
     background: var(--main-color);
 }
 .main img{
-    width: 25em;
+    width: 30em;
     position: absolute;
     border-radius: 8px;
-    right: 60px;
+    right: 0px;
     z-index: -1;
 }
+
 @media (max-width: 1250px){
     .main img{
-        width: 25em;
+        width: 28em;
         right: 0;
+        top: 5px;
+    }
+    .main{
+        width: 980px;
+    }
+    .box h1{
+        font-size: 4em;
+        margin-bottom: 0em;
+        margin-left: 10px;
+    }
+    .box p{
+        margin-left: 20px;
     }
 }
+
 @media (max-width: 1000px){
     body{
         font-size: 14px;
     }
     .main img{
-        width: 35em;
-        top: 80px;
+        width: 25em;
+        top: 5px;
+        right: 150px;
     }
     .main{
+        height: 600px;
+        width: 1000px;
         align-items: flex-end;
     }
-    .checkBtn{
-        display: block;
-        width: 25px;
-        height: 25px;
-        cursor: pointer;
-        position: relative;
-        appearance: none;
-        -webkit-appearance: none;
+    .box h1{
+        font-size: 4em;
+        margin-left: 15px;
     }
-    .checkBtn::before{
-        content: '\f8c9';
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 700;
-        font-size: 1.9em;
-        color: var(--sec-font-color);
-    }
-    .checkBtn:checked::before{
-        content: '\f80d'
-    }
-    .nav ol{
-        position: absolute;
-        width: 100%;
-        flex-direction: column;
-        background: var(--bg);
-        top: 80px;
-        left: 0;
-        z-index: 100;
-        padding: 1.2em;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path .4s;
-    }
-    .checkBtn:checked ~ ol{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-    .nav ol::before{
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background: var(--main-color);
+    .box p{
+        margin-left: 25px;
     }
 }
-@media (max-width: 900px){
+
+@media (max-width: 800px){
+    body{
+        font-size: 14px;
+    }
+    .main img{
+        width: 25em;
+        top: 5px;
+        right: 300px;
+    }
+    .main{
+        height: 550px;
+        width: 1000px;
+        align-items: flex-end;
+    }
+    .box h1{
+        font-size: 4em;
+        margin-left: 10px;
+    }
+    .box p{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 700px){
     .main img{
         width: 30em;
+        right: 0px;
     }
+    .main{
+        height: 800;
+        width: 650px;
+    }
+    .box p{
+        margin-left: 20px;
+    }
+    .social a{
+        width: 55px;
+        height: 55px;
+        margin: 10px;
+    }
+
 }
 @media (max-width: 600px){
     .main img{
-        width: 22em;
+        width: 25em;
+        right: 20px;
     }
+    .main{
+        height: 570px;
+        width: 520px;
+        align-items: flex-end;
+        border: 1px solid blue;
+    }
+    .box h1{
+        font-size: 4em;
+        margin-left: 10px;
+    }
+    .box p{
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+    .box button{
+        margin-left: 20px;
+    }
+    .social a{
+        width: 45px;
+        height: 45px;
+        margin: 7px;
+    }
+    
 }
 @media (max-width: 400px){
     body{
@@ -188,8 +232,19 @@ body{
         width: 5em;
     }
 }
+@media (max-width: 120px){
+    body{
+        font-size: 10px;
+    }
+    .main{
+        height: 400px;
+    }
+    .main img{
+        width: 8em;
+    }
+}
 /* Contact */
-.footer{
+.social{
     margin: 0 auto;
     width: 100%;
     padding: 0;
@@ -277,4 +332,13 @@ body{
 .checked{
     color: #F6E674;
     text-shadow: 0 0 30px #F6E674;
+}
+footer{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
